@@ -17,12 +17,12 @@ AboutDialog::AboutDialog(QWidget *parent)
 #define UI_LABEL_ARG(label, arg) d->ui.label->setText(d->ui.label->text().arg)
     UI_LABEL_ARG(version, arg(_L(cApp.version())));
     UI_LABEL_ARG(qt_info, arg(_L(qVersion()), _L(QT_VERSION_STR)));
-    UI_LABEL_ARG(copyright, arg(QDate::currentDate().year()).arg(tr("Lee, Byoung-young")));
-    UI_LABEL_ARG(contacts, arg(link("http://bomi-player.github.io") % "<br>"_a).
-                 arg(link("http://twitter.com/bomi_player") % "<br>"_a).
-                 arg(link("https://github.com/xylosper/bomi/issues") % "<br>"_a).
-                 arg("<a href=\"mailto:darklin20@gmail.com\">darklin20@gmail.com</a><br>"_a));
-    UI_LABEL_ARG(ivan, arg(_L("https://plus.google.com/u/1/117118228830713086299/posts")));
+    UI_LABEL_ARG(copyright, arg(QDate::currentDate().year()).arg(tr("Gayanch (Original authors: Lee, Byoung-young)")));
+    UI_LABEL_ARG(contacts, arg(link("http://github.com/gayanch/bomi") % "<br>"_a).
+                 arg(link("#") % "<br>"_a).
+                 arg(link("#") % "<br>"_a).
+                 arg("<a href=\"mailto:agchamara93@gmail.com\">gayanch</a><br>"_a));
+    UI_LABEL_ARG(ivan, arg(_L("#")));
 #undef UI_LABEL_ARG
     d->ui.license->setText(
        u"This program is free software; "

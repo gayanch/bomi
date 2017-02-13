@@ -163,7 +163,7 @@ HEADERS += \
 	enum/videoratio.hpp \
 	enum/videoeffect.hpp \
 	enum/visualization.hpp \
-	misc/charsetdetector.hpp \
+        #misc/charsetdetector.hpp \
 	misc/downloader.hpp \
 	misc/actiongroup.hpp \
 	misc/dataevent.hpp \
